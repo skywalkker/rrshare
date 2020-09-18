@@ -16,7 +16,7 @@ RUN \
  wget "https://github.com/sgerrand/alpine-pkg-glibc/releases/download/${GLIBC_VERSION}/glibc-${GLIBC_VERSION}.apk" && \
  wget "https://github.com/sgerrand/alpine-pkg-glibc/releases/download/${GLIBC_VERSION}/glibc-bin-${GLIBC_VERSION}.apk" && \
  wget "http://appdown.rrys.tv/rrshareweb_linux_2.20.tar.gz" &&\
- apk add --allow-untrusted glibc-${GLIBC_VERSION}.apk glibc-bin-${GLIBC_VERSION}.apk && \
+ apk add --allow-untrusted glibc-${GLIBC_VERSION}.apk glibc-bin-${GLIBC_VERSION}.apk  && tar -xvf rrshareweb_linux_2.20.tar.gz && \
  apk del wget && rm -rf *.apk && rm -rf *.tar.gz
 
 # ports and volumes
