@@ -22,4 +22,4 @@ RUN \
  RUN chmod -R 777  /opt/*
 # ports and volumes
 EXPOSE 3001 
-CMD ["/opt/data"]
+CMD ["/opt/rrshareweb/rrshareweb"]
